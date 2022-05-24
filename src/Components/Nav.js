@@ -15,6 +15,8 @@ function Nav() {
 
     const showSidebar = () => setSidebar(!sidebar);
 
+    const closeSidebar = () => setSidebar(false);
+
     return (
         <>
             <IconContext.Provider value={{ color: '#060b26' }}>
@@ -22,14 +24,12 @@ function Nav() {
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
-                    <div>
-                        <a href="https://www.linkedin.com/in/julius-albiz-65b1a2172/" target="_blank" rel="noreferrer">
-                            <AiIcons.AiOutlineLinkedin size={30} className="nav-icons" />
-                        </a>
-                        <a href="https://github.com/Julle-96" target="_blank" rel="noreferrer">
-                            <AiIcons.AiOutlineGithub size={30} className="nav-icons" />
-                        </a>
-                    </div>
+                    <Link to="/" onClick={closeSidebar}>
+                        <img className="logo" src="resources/logo3.png" alt="logo" />
+                    </Link>
+
+                    <Link to="/game" className="button" href='public/logo512.png' onClick={closeSidebar} download>Play Now</Link>
+
                 </div>
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items" onClick={showSidebar}>

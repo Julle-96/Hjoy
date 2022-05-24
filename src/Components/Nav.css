@@ -19,7 +19,10 @@ nav {
     align-items: center;
     position: absolute;
     width: 100%;
+}
 
+.navbar a {
+    margin-right: 2vw;
 }
 
 
@@ -31,6 +34,12 @@ nav {
     margin-left: 2vw;
     font-size: 5vh;
     background: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.menu-bars:hover {
+    background-color: #00FA9A;
 }
 
 .nav-menu {
@@ -92,4 +101,10 @@ nav {
 span {
     margin-left: 1vw;
 
+}
+
+.logo {
+    height: 12vh;
+    width: auto;
+    margin-left: 5vw;
 }

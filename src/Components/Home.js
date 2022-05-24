@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-
 function Home() {
 
     return (
@@ -10,8 +9,9 @@ function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="Home">
-            <h3>Relive your childhood</h3>
-            <a className="button" href='' download>Download Game</a>
+
+            <h4>Relive your childhood</h4>
+
         </motion.div>
     )
 }

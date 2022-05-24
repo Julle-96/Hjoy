@@ -7,24 +7,19 @@
 }
 
 .image {
-    width: 60vw;
+    width: auto;
     height: 40vh;
     border-radius: 1vw;
-    margin-top: 30vh;
-    margin-left: 20vw;
 }
 
-.image:hover {
-    transform: scale(1.2);
-    transition-duration: 1s;
-}
+
 
 .right-arrow {
     position: absolute;
     top: 70%;
     right: 15vw;
     font-size: 3vh;
-    color: black;
+    color: #F0F8FF;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -35,7 +30,7 @@
     top: 70%;
     left: 15vw;
     font-size: 3vh;
-    color: black;
+    color: #F0F8FF;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -44,10 +39,46 @@
 .slide {
     opacity: 0;
     transition-duration: 1s ease;
+
 }
 
 .slide.active {
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    text-align: center;
+}
+
+.slide.active p {
+    font-size: 2vh;
+    color: #F0F8FF;
+    margin-bottom: 1vh;
+    font-family: 'Lato', sans-serif
+}
+
+sub {
+    font-size: small;
+}
+
+.game-text {
+    width: 80%;
+    height: 30vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.game-text p {
+    color: #F0F8FF;
+    font-size: 2vh;
+    font-family: 'Lato', sans-serif;
+    width: 60%;
+}
+
+.specification {
+    margin-right: 5vw;
+    width: 20%;
+    margin-bottom: 10vh;
 }

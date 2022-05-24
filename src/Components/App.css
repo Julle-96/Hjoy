@@ -16,6 +16,7 @@ body {
     background-color: #4169E1;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 
 
@@ -30,26 +31,30 @@ body {
     align-items: center;
 }
 
-
-
-
 h1 {
     font-size: 3vh;
-    color: white;
+    color: #F0F8FF;
     margin-top: 15vh;
     text-align: center;
 }
 
 h2 {
     font-size: 2vh;
-    color: white;
+    color: #F0F8FF;
     text-align: center;
 }
 
 h3 {
-    margin-top: 45vh;
+    margin-top: 5vh;
     font-size: 5vh;
-    color: white;
+    color: #F0F8FF;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 40vh;
+    font-size: 5vh;
+    color: #F0F8FF;
     text-align: center;
 }
 
@@ -63,7 +68,60 @@ hr {
     height: 20vh;
     width: 12vw;
     border-radius: 50%;
+}
 
+.profile h2 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 1vh;
+}
+
+
+
+
+
+.home img {
+    height: 20vh;
+    width: auto;
+}
+
+
+.button {
+    font: bold 2vh Arial;
+    text-decoration: none;
+    background-color: #F0F8FF;
+    border: 3px solid #060b26;
+    color: #333333;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #00FA9A;
+}
+
+
+.button-holder {
+    margin-top: 5vh;
+}
+
+
+.about-text {
+    margin-top: 5vh;
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.about-text p {
+    color: #F0F8FF;
+    font-size: 2vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
 .Home {
@@ -72,29 +130,32 @@ hr {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url('/Users/admin/ComputerGameDesign/project-website/public/logo512.png');
+    background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-.home-logo {
-    height: 5vh;
-    width: 5vh;
-    margin-top: 3vh;
-    margin-left: 1vw;
+@keyframes animate {
+    0% {
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/2.jpg);
+    }
 
-}
+    50% {
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/3.jpg);
+    }
 
-.nav-button {
-    padding: 1vh 1vw 1vh 1vw;
-    border-radius: 1vh;
-    color: black;
-}
+    100% {
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/1.jpg);
+    }
 
-.button {
-    font: bold 2vh Arial;
-    text-decoration: none;
-    background-color: #00FA9A;
-    color: #333333;
-    padding: 1vh 1vw 1vh 1vw;
-    border-radius: 3vh;
+
 }

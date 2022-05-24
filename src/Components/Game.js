@@ -6,6 +6,7 @@ import * as FaIcons from 'react-icons/fa';
 
 
 
+
 function Game() {
     const [current, setCurrent] = useState(0);
 
@@ -29,21 +30,49 @@ function Game() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="Game">
-            <h1>Game</h1>
-            <div clasName="image-slider">
+            <h1>Hello and welcome to our game H<sub>j</sub>oy!</h1>
+
+            <div className="game-text">
+                <p>
+                    H<sub>j</sub>oy is a game all about reliving fond childhood memories of playing with water guns, in combination with the grownup aspect of solving problems.
+                    From this, a 3D first person puzzle platformer was created.
+                    <br></br><br></br>In this game, you will have the opportunity to play two created levels with different settings. One is a playground, and the other is a PE class.
+                    Of course these two levels also have different ways of completing them, but all make use of the water gun and its liquid mechanics implemented with the NVIDIA FleX
+                    plugin for Unreal Engine.
+                    <br></br><br></br> Checkout and scroll through the images below that showcase different elements of the game!</p>
+
+                <div className="specification">
+                    <p>
+                        Platforms available for download: <br></br><FaIcons.FaWindows size={20} />
+
+                        <br></br></p>
+                    <div className="button-holder">
+                        <a className="button" href='public/logo512.png' download>Download Game</a>
+                    </div>
+                </div>
+
+            </div>
+            <div className="image-slider">
                 <FaIcons.FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
                 <FaIcons.FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
                 {SliderData.map((slide, index) => {
                     return (
+
+
                         <div className={index === current ? "slide active" : "slide"} key={index}>
                             {index === current && (
-                                <img src={slide.image} alt={slide.alt} className="image" />
+                                <>
+
+                                    <p>{slide.text}</p>
+                                    <img src={slide.image} alt={slide.alt} className="image" />
+                                </>
+
                             )}
                         </div>
                     )
                 })}
             </div>
-        </motion.div>
+        </motion.div >
     )
 }
 export default Game;
