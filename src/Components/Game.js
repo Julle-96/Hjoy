@@ -9,6 +9,7 @@ import * as FaIcons from 'react-icons/fa';
 
 function Game() {
     const [current, setCurrent] = useState(0);
+    const [modal, setModal] = useState(false);
 
     const length = SliderData.length;
 
@@ -24,6 +25,12 @@ function Game() {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
+
+
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -36,7 +43,7 @@ function Game() {
                 <p>
                     H<sub>j</sub>oy is a game all about reliving fond childhood memories of playing with water guns, in combination with the grownup aspect of solving problems.
                     From this, a 3D first person puzzle platformer was created.
-                    <br></br><br></br>In this game, you will have the opportunity to play two created levels with different settings. One is a playground, and the other is a PE class.
+                    <br></br><br></br>In this game, you will have the opportunity to play two created levels with different settings, that represent different stages in life. One is a playground, and the other is a PE class.
                     Of course these two levels also have different ways of completing them, but all make use of the water gun and its liquid mechanics implemented with the NVIDIA FleX
                     plugin for Unreal Engine.
                     <br></br><br></br> Checkout and scroll through the images below that showcase different elements of the game!</p>
@@ -64,10 +71,20 @@ function Game() {
                                 <>
 
                                     <p>{slide.text}</p>
-                                    <img src={slide.image} alt={slide.alt} className="image" />
+                                    <img onClick={toggleModal} src={slide.image} alt={slide.alt} className="image" />
+                                    {modal && (
+                                        <div className="popup" onClick={toggleModal}>
+                                            <div className="overlay"></div>
+                                            <div className="popup-content" >
+                                                <img src={slide.image} alt={slide.alt} className="popup-image" />
+
+                                            </div>
+                                        </div>
+                                    )}
                                 </>
 
-                            )}
+                            )
+                            }
                         </div>
                     )
                 })}

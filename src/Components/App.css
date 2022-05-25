@@ -116,6 +116,8 @@ hr {
     color: #F0F8FF;
     font-size: 2vh;
     font-family: 'Lato', sans-serif;
+    max-height: 30vh;
+    overflow: auto;
 }
 
 .background-image {

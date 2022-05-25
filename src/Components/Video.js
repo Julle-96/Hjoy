@@ -16,7 +16,7 @@ function Video() {
             <h1>Enjoy a video where the core game mechanics and elements are shown! </h1>
 
             <VideoPlayer
-                src="resources/trailerV2.mp4" poster="resources/logo3.png" className="trailer" />
+                src="resources/trailerV3.mp4" poster="resources/logo3.png" className="trailer" />
         </motion.div>
     )
 }

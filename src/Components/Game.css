@@ -10,14 +10,15 @@
     width: auto;
     height: 40vh;
     border-radius: 1vw;
+    cursor: pointer;
 }
 
 
 
 .right-arrow {
     position: absolute;
-    top: 70%;
-    right: 15vw;
+    top: 75%;
+    right: 25vw;
     font-size: 3vh;
     color: #F0F8FF;
     z-index: 10;
@@ -27,8 +28,8 @@
 
 .left-arrow {
     position: absolute;
-    top: 70%;
-    left: 15vw;
+    top: 75%;
+    left: 25vw;
     font-size: 3vh;
     color: #F0F8FF;
     z-index: 10;
@@ -67,6 +68,8 @@ sub {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-height: 30vh;
+    overflow: auto;
 
 }
 
@@ -81,4 +84,35 @@ sub {
     margin-left: 10vw;
     width: 40%;
     margin-bottom: 10vh;
+}
+
+.popup,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+
+.popup-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.popup-image {
+    height: 60vh;
+    width: auto;
+    max-width: 60vw;
 }
