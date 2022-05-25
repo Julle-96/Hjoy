@@ -130,7 +130,7 @@ hr {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/1.jpg);
+    background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameimages/1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,15 +146,15 @@ hr {
 
 @keyframes animate {
     0% {
-        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/2.jpg);
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameimages/2.jpg);
     }
 
     50% {
-        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/3.jpg);
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameimages/3.jpg);
     }
 
     100% {
-        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameImages/1.jpg);
+        background-image: url(/Users/admin/ComputerGameDesign/project-website/public/gameimages/1.jpg);
     }
 
 
