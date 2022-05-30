@@ -54,7 +54,7 @@ function Game() {
 
                         <br></br></p>
                     <div className="button-holder">
-                        <a className="button" href='public/logo512.png' download>Download Game</a>
+                        <a className="button" href='https://drive.google.com/file/d/1eZ-fbDz4IUS_9r_AH4tafJTtaig3eXRO/view?usp=sharing' target="_blank" rel="noreferrer" download>Download Game</a>
                     </div>
                 </div>
 
